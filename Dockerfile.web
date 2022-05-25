@@ -19,5 +19,3 @@ COPY app /var/www/html/
 # DIFF to original
 COPY heroku/ports.conf /var/apache2/ports.conf
 COPY heroku/apache.conf /var/apache2/site-enabled/000-default.conf
-
-CMD apachectl -D FOREGROUND
