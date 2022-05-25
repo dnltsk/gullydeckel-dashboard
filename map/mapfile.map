@@ -1,0 +1,83 @@
+MAP
+  NAME "MAPSERVER_QUICKSTART"
+  EXTENT -180 -90 180 90
+  UNITS DD
+  SHAPEPATH "data/"
+  SIZE 800 600
+
+  IMAGETYPE PNG24
+
+  PROJECTION
+    "init=epsg:4326"
+  END
+
+  WEB
+    METADATA
+      "ows_title" "MapServer Quickstart"
+      "ows_enable_request" "*"
+      "ows_srs" "EPSG:3857 EPSG:4326 EPSG:25832 EPSG:25833"
+      "labelcache_map_edge_buffer" "10"
+      "tile_map_edge_buffer" "10"
+    END
+  END
+
+    SYMBOL
+      NAME "circlef"
+      TYPE ellipse
+      FILLED true
+      POINTS
+        1 1
+      END # POINTS
+    END # SYMBOL
+
+
+  LAYER
+    NAME "messages"
+    STATUS ON
+    TYPE point
+    CONNECTIONTYPE OGR
+    CONNECTION "messages.geojson"
+    DATA "messages"
+    METADATA
+        "title" "Nachrichten"
+        "wfs_getfeature_formatlist" "gml,geojson,shapezip,dbfzip,spatialite,application/json"
+    END
+    CLASS
+      STYLE
+        MAXSCALEDENOM 350000
+        SYMBOL circlef
+        COLOR 191 64 191
+        SIZE 30
+        OUTLINECOLOR 255 255 255
+        WIDTH 2
+      END
+      STYLE
+        MINSCALEDENOM 350001
+        SYMBOL circlef
+        COLOR 191 64 191
+        SIZE 15
+        OUTLINECOLOR 255 255 255
+        WIDTH 2
+      END
+    END
+  END
+
+    LAYER
+      NAME "pct-by-us-forest-service-2011"
+      STATUS ON
+      TYPE Line
+      CONNECTIONTYPE OGR
+      CONNECTION "us-forest-service-pct-2011.geojson"
+      DATA "PCT-by-US-Forest-Service-2011"
+      METADATA
+          "title" "PCT by US-Forest-Service (2011)"
+      END
+      CLASS
+        STYLE
+          COLOR 255 0 0
+          WIDTH 2
+        END
+      END
+    END
+
+END #MAP

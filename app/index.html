@@ -1,0 +1,103 @@
+<html>
+<head>
+    <style> html, body, #map { height: 100%; width: 100%; padding: 0; margin: 0; } </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-pointable@0.0.2/leaflet-pointable.js"></script>
+    <script src="https://unpkg.com/leaflet-trails@0.0.1/leaflet-trails.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-trails@0.0.1/leaflet-trails.css">
+</head>
+<body>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+</body>
+</html>
+
+<script src="leaflet-layerjson.min.js"></script>
+
+
+
+
+<script>
+var map = L.map('map', {
+        crs: L.CRS.EPSG3857
+    });
+
+	//map.setView(new L.LatLng(36.778259, -119.417931), 5);
+
+	var control = L.control.layers(null, null, {
+		collapsed: false
+	}).addTo(map);
+
+	var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+		maxZoom: 17,
+		attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+		opacity: 0.90
+	}).addTo(map);
+
+    var wmsLayer = L.tileLayer.wms('http://localhost/cgi-bin/mapserv?map=/mnt/c/Users/danie/projects/gullydeckel-dashboard/map/mapfile.map', {
+    //var wmsLayer = L.tileLayer.wms('/cgi-bin/mapserv?map=/map/mapfile.map', {
+        layers: 'messages',
+        transparent: true,
+        format: 'image/png'
+    }).addTo(map);
+
+	var HikingTrails = L.tileLayer('https://tile.waymarkedtrails.org/{id}/{z}/{x}/{y}.png', {
+		id: 'hiking',
+		pointable: true,
+		attribution: '&copy; <a href="http://waymarkedtrails.org">Sarah Hoffmann</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+	}).addTo(map);
+
+	var CyclingTrails = L.tileLayer('https://tile.waymarkedtrails.org/{id}/{z}/{x}/{y}.png', {
+		id: 'cycling',
+		pointable: true,
+		attribution: '&copy; <a href="http://waymarkedtrails.org">Sarah Hoffmann</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+	});
+
+	var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'data/messages.geojson');
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          const geojsonLayer = L.geoJSON(JSON.parse(xhr.responseText), {
+            // Marker Icon
+            // pointToLayer: function (feature, latlng) {
+            //     return L.marker(latlng, {icon: ccIcon});
+            // },
+            // Popup
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup("<b>" + feature.properties.content + '</b><br />'
+                    + feature.properties.time);
+            }
+          }).addTo(map);
+
+          map.fitBounds(geojsonLayer.getBounds().pad(Math.sqrt(2) / 4));
+
+          control.addOverlay(geojsonLayer, "Martins Nachrichten");
+        }
+      };
+      xhr.send();
+
+    var pctLayer ;
+    var xhrPct = new XMLHttpRequest();
+      xhrPct.open('GET', 'data/us-forest-service-pct-2011.geojson');
+      xhrPct.setRequestHeader('Content-Type', 'application/json');
+      xhrPct.onload = function() {
+        if (xhrPct.status === 200) {
+          pctLayer = L.geoJSON(JSON.parse(xhrPct.responseText), {
+            // Marker Icon
+            // pointToLayer: function (feature, latlng) {
+            //     return L.marker(latlng, {icon: ccIcon});
+            // },
+          }).addTo(map);
+          control.addOverlay(pctLayer, "PCT Track 2011");
+        }
+      };
+      xhrPct.send();
+
+
+    control.addOverlay(CyclingTrails, "Cycling Routes");
+	control.addOverlay(HikingTrails, "Hiking Routes");
+	L.control.scale({position: 'bottomright'}).addTo(map);
+
+</script>

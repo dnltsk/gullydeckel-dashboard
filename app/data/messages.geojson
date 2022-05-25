@@ -1,0 +1,579 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.65512,
+          34.341576
+        ]
+      },
+      "properties": {
+        "time": "2022-05-25T00:56:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.472493,
+          34.293801
+        ]
+      },
+      "properties": {
+        "time": "2022-05-24T13:00:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.472515,
+          34.294295
+        ]
+      },
+      "properties": {
+        "time": "2022-05-24T02:31:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.265083,
+          34.312158
+        ]
+      },
+      "properties": {
+        "time": "2022-05-23T13:24:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.264911,
+          34.312245
+        ]
+      },
+      "properties": {
+        "time": "2022-05-23T01:04:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.083251,
+          34.277751
+        ]
+      },
+      "properties": {
+        "time": "2022-05-22T13:16:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.082908,
+          34.278288
+        ]
+      },
+      "properties": {
+        "time": "2022-05-22T00:48:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.882836,
+          34.255736
+        ]
+      },
+      "properties": {
+        "time": "2022-05-21T14:24:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.740743,
+          34.215126
+        ]
+      },
+      "properties": {
+        "time": "2022-05-19T13:20:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.740293,
+          34.214998
+        ]
+      },
+      "properties": {
+        "time": "2022-05-19T00:50:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.709201,
+          34.128385
+        ]
+      },
+      "properties": {
+        "time": "2022-05-18T12:48:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.70903,
+          34.128245
+        ]
+      },
+      "properties": {
+        "time": "2022-05-18T02:11:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.656351,
+          33.988663
+        ]
+      },
+      "properties": {
+        "time": "2022-05-17T14:05:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.655836,
+          33.988781
+        ]
+      },
+      "properties": {
+        "time": "2022-05-17T01:50:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.730358,
+          33.854038
+        ]
+      },
+      "properties": {
+        "time": "2022-05-16T12:56:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.730401,
+          33.854628
+        ]
+      },
+      "properties": {
+        "time": "2022-05-15T22:48:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.678473,
+          33.787518
+        ]
+      },
+      "properties": {
+        "time": "2022-05-15T13:36:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.678603,
+          33.787615
+        ]
+      },
+      "properties": {
+        "time": "2022-05-14T23:04:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.685748,
+          33.764495
+        ]
+      },
+      "properties": {
+        "time": "2022-05-14T20:15:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.713728,
+          33.74499
+        ]
+      },
+      "properties": {
+        "time": "2022-05-13T17:30:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.64442,
+          33.760706
+        ]
+      },
+      "properties": {
+        "time": "2022-05-13T13:48:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.644613,
+          33.760943
+        ]
+      },
+      "properties": {
+        "time": "2022-05-13T01:24:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.570906,
+          33.595236
+        ]
+      },
+      "properties": {
+        "time": "2022-05-12T13:39:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.571056,
+          33.595708
+        ]
+      },
+      "properties": {
+        "time": "2022-05-12T00:32:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.607856,
+          33.44293
+        ]
+      },
+      "properties": {
+        "time": "2022-05-11T13:26:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.608178,
+          33.442715
+        ]
+      },
+      "properties": {
+        "time": "2022-05-11T00:51:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.639228,
+          33.29439
+        ]
+      },
+      "properties": {
+        "time": "2022-05-10T13:40:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.639206,
+          33.294711
+        ]
+      },
+      "properties": {
+        "time": "2022-05-10T01:27:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.543333,
+          33.167156
+        ]
+      },
+      "properties": {
+        "time": "2022-05-09T13:14:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.543248,
+          33.167113
+        ]
+      },
+      "properties": {
+        "time": "2022-05-09T01:26:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.473338,
+          33.096753
+        ]
+      },
+      "properties": {
+        "time": "2022-05-08T20:14:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.527455,
+          33.012241
+        ]
+      },
+      "properties": {
+        "time": "2022-05-07T12:52:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.527368,
+          33.0122
+        ]
+      },
+      "properties": {
+        "time": "2022-05-07T00:35:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.434028,
+          32.894053
+        ]
+      },
+      "properties": {
+        "time": "2022-05-06T13:01:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.4342,
+          32.894193
+        ]
+      },
+      "properties": {
+        "time": "2022-05-05T23:43:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.447096,
+          32.777023
+        ]
+      },
+      "properties": {
+        "time": "2022-05-05T13:02:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.447331,
+          32.777163
+        ]
+      },
+      "properties": {
+        "time": "2022-05-04T23:35:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.454285,
+          32.749365
+        ]
+      },
+      "properties": {
+        "time": "2022-05-04T19:59:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.517605,
+          32.686171
+        ]
+      },
+      "properties": {
+        "time": "2022-05-04T01:06:00Z",
+        "content": "Arrived here. End of day. Camping."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.46849,
+          32.589205
+        ]
+      },
+      "properties": {
+        "time": "2022-05-03T14:39:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.211976,
+          32.854453
+        ]
+      },
+      "properties": {
+        "time": "2022-05-01T23:54:00Z",
+        "content": "Check-In. I am here :-)"
+      }
+    }
+  ]
+}
